@@ -1,5 +1,7 @@
 # 基本概念和使用：Spring Bean 源码阅读报告1
 
+[TOC]
+
 ## 序言
 
 作为面向对象程序设计和 Java 语言的初学者，本次源码阅读报告是一个从 0 到 1 的过程。我希望通过对 Spring Bean 的分析，了解它的功能、理解它蕴含的面向对象思想、甚至窥探设计者的意图和思路。此类顶级开源项目无疑能在思维、实践上给予我们多层次的指导。
@@ -220,6 +222,8 @@ Bob
 Spring 也提供了另一种容器 `BeanFactory`，它的实现是按需创建，即第一次获取 Bean 时才创建这个 Bean，而 `ApplicationContext` 会一次性创建所有 Bean。事实上，`BeanFactory` 提供了管理 Bean 的配置框架和基本功能， `ApplicationContext` 则是 `BeanFactory` 的超集和子接口，添加了 AOP 功能的集成、用于国际化的消息资源处理等功能。
 
 ![ApplicationContext 继承图](https://josephqiu-1305443579.cos.ap-beijing.myqcloud.com/uPic/lwar6V.jpg)
+
+## 总结&下期预告
 
 在这一节中，我们通过实例接触了 Bean 和 IoC 容器的使用方法。知道了怎么用，接下来就需要弄懂 Spring Bean 是怎么实现这些功能——创建、实例化、依赖注入、生命周期管理的。我们会通过源码阅读来完成。也许这学期的三次作业不足以将这些过程的机理都分析清楚，那么后续可能会选择其中的一部分作尽可能详尽清楚的剖析。
 

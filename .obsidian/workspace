@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "9a310a37183c19da",
+    "type": "split",
+    "children": [
+      {
+        "id": "86d6595961e584b3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Spring_Bean_Analysis_1.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b26a32b94bba699e",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a4bb6e832bc1e58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83666e2dfa8409c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "23b0032fb731bc2b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 214
+  },
+  "right": {
+    "id": "338159e2fa2e2484",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8f63f89c90b8c90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61cfb490f70c5fa7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring_Bean_Analysis_1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "86d6595961e584b3",
+  "lastOpenFiles": [
+    "Spring_Bean_Analysis_1.md",
+    "README.md"
+  ]
+}

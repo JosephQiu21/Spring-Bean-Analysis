@@ -1,0 +1,35 @@
+:root {
+    /* Sizes, weights, padding */
+    --h1:2em;
+    --h2:1.8em;
+    --h3:1.5em;
+    --h4:1.2em;
+    --h5:1.1em;
+    --h6:1.1em;
+
+    --yellow:#e5b567;
+    --green:#b4d273;
+    --orange:#e87d3e;
+    --purple:#9e86c8;
+    --red:#b05279;
+    --blue:#6c99bb;
+
+    --grey1:#444;
+    --grey2:#666;
+    --grey3:#888;
+    --grey4:#999;
+
+    --h2-color:var(--grey1);
+    --h3-color:var(--grey2);
+    --h4-color:var(--grey3);
+    --h5-color:var(--grey4);
+}
+
+strong {
+    color:var(--red);
+    font-weight: 700;
+}
+  
+em {
+    color:var(--blue);
+}   
