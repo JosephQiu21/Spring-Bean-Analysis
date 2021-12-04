@@ -186,7 +186,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 
 通过类继承图，我们可以发现正是 `DefaultListableBeanFactory` **继承了 `DefaultSingletonBeanRegistory`，从而可以访问单例池**，犹如定义在自己内部；**同时实现了 `BeanFactory`，从而可以使用 `getBean()` 方法。**可以看出，`DefaultListableBeanFactory` 在这里扮演了一个类似中介的角色！
 
-![DefaultListableBeanFactory 继承关系](https://josephqiu-1305443579.cos.ap-beijing.myqcloud.com/uPic/CbG2hw.tif)
+![DefaultListableBeanFactory](https://josephqiu-1305443579.cos.ap-beijing.myqcloud.com/uPic/DefaultListableBeanFactory.png)
 
 到此为止，我们对 `getBean()` 方法抵达 `DefaultSingletonBeanRegistry` 中的单例池 `singletonObjects` 的过程已经较为清晰了，其中关键点如下：
 
