@@ -162,7 +162,7 @@ public class Main {
 public <T> T getBean(Class<T> requiredType) throws BeansException {
         this.assertBeanFactoryActive();
         return this.getBeanFactory().getBean(requiredType);
-    }
+}
 ```
 
 这里的 `getBeanFactory()` 是一个抽象方法，交给子类实现：
@@ -191,8 +191,8 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 到此为止，我们对 `getBean()` 方法抵达 `DefaultSingletonBeanRegistry` 中的单例池 `singletonObjects` 的过程已经较为清晰了，其中关键点如下：
 
 1. 在 `AbstractApplicationContext` 中通过模版方法设计模式，在子类 `AbstractRefreshableApplicationContext` 中实现 `getBeanFactory()` 方法
-2. 子类 `AbstractRefreshableApplicationContext` 中组合了一个 `BeanFactory`，那就是 `DefaultLisatableBeanFactory`。组合关系在类继承图中无法体现，这是我们疑惑的来源
-3. `DefaultLisableBeanFactory` 在整个过程中扮演了一个中介的角色。它继承了 `DefaultSingletonBeanRegistory`，从而可以访问单例池，犹如定义在自己内部；同时实现了 `BeanFactory`，从而可以使用 `getBean()` 方法
+2. 子类 `AbstractRefreshableApplicationContext` 中组合了一个 `BeanFactory`，那就是 `DefaultListableBeanFactory`。组合关系在类继承图中无法体现，这是我们疑惑的来源
+3. `DefaultListableBeanFactory` 在整个过程中扮演了一个中介的角色。它继承了 `DefaultSingletonBeanRegistory`，从而可以访问单例池，犹如定义在自己内部；同时实现了 `BeanFactory`，从而可以使用 `getBean()` 方法
 
 全过程的流程图如下：
 
